@@ -69,8 +69,9 @@ body{
     padding-top: 50px;
 }
 
-.login-header{
+.fa-header{
     font-size: 2rem;
+    font-weight: 500;
 }
 
 .btn-e-m-q{
@@ -130,23 +131,32 @@ body{
     font-size: 0.7rem;
     margin-bottom: 10px;
 }
+.input-label-text1{
+    color: #9A9A9A;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
 
 .pri-btn{
     border: none;
     background-color:#24AE8F;
     width:100%;
-    align-self: center;
-    margin-left:0;
-    margin-right:0;
+    display:flex;
     color:white;
     padding-left:0;
     padding-right:0;
     height: 2.6rem;
     cursor: pointer;
-    display:block;
     border-radius: 5px;
-    font-size:1.3rem;
+    font-size:1.1rem;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 
+}
+
+.check-lebel{
+    font-size:0.9rem
 }
 
 ::-webkit-scrollbar{
@@ -171,6 +181,26 @@ body{
     cursor: pointer;
 }
 
+.green-card{
+    width: 100%;
+    height:100px;
+    background-color:#EDF9F6;
+    display:flex;
+    padding-left:40px;
+    justify-content:center;
+    flex-direction: column;
+}
+.g-header{
+    color:#00D192;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.g-text{
+    color: #9A9A9A;
+    font-size: 0.7rem;
+}
+
 @media only screen and (max-width: 1200px){
    
     /*Tablets [601px -> 1200px]*/
@@ -182,7 +212,12 @@ body{
     .container-login{
         width: 100%;
         height: 100vh;
+
        
+    }
+
+    .sign-top-nav{
+        display:none
     }
 
     .left-content{
@@ -207,3 +242,72 @@ body{
 	/*Small smartphones [325px -> 425px]*/
 }
 
+.main {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+  
+/* Hide the default checkbox */
+input[type=checkbox] {
+    visibility: hidden;
+}
+  
+/* Creating a custom checkbox
+based on demand */
+.geekmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border:1px solid black;
+    border-radius: 3px;
+}
+  
+
+
+/* Specify the background color to be
+shown when checkbox is active */
+.main input:active ~ .geekmark {
+    background-color: #24AE8F;
+}
+  
+/* Specify the background color to be
+shown when checkbox is checked */
+.main input:checked ~ .geekmark {
+    background-color: #24AE8F;
+    border:none;
+}
+  
+/* Checkmark to be shown in checkbox */
+/* It is not be shown when not checked */
+.geekmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+/* Display checkmark when checked */
+.main input:checked ~ .geekmark:after {
+    display: block;
+}
+  
+/* Styling the checkmark using webkit */
+/* Rotated the rectangle by 45 degree and 
+showing only two border to make it look
+like a tickmark */
+.main .geekmark:after {
+    left: 6px;
+    bottom: 6px;
+    width: 6px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
