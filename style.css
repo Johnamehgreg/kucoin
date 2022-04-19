@@ -10,12 +10,17 @@ body{
 }
 
 
+
+
 .container-login{
     width: 100%;
     height: 100vh;
     display: flex;
     /* overflow:scroll */
    
+}
+.login-header{
+    font-size:2rem
 }
 
 .left-content{
@@ -314,11 +319,10 @@ like a tickmark */
     transform: rotate(45deg);
 }
 
-.mystyle {
-    width: 100%;
-    padding: 25px;
-    background-color: coral;
-    color: white;
-    font-size: 25px;
-    box-sizing: border-box;
-  }
+
+
+  .disactivate-input{
+    display:none;
+    width: 0;
+    height:0
+}
