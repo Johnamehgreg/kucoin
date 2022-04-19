@@ -166,7 +166,9 @@ body{
 ::-webkit-scrollbar-thumb{
     background-color: #cfcfd6;
 }
-
+.btn-active{
+    color:#24AE8F
+}
 .f-pass-div{
     width:100%;
     display:flex;
@@ -311,3 +313,12 @@ like a tickmark */
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+
+.mystyle {
+    width: 100%;
+    padding: 25px;
+    background-color: coral;
+    color: white;
+    font-size: 25px;
+    box-sizing: border-box;
+  }

@@ -27,11 +27,11 @@
                 <br>
                 <br>
                 <div class="btn-e-m-q">
-                    <button>Mobile</button>
+                    <button class=" "  id="mobileSign" onclick="changeSign('mobile')" >Mobile</button>
                     <div class="vertical-divider"></div>
-                    <button>Email</button>
-                    <div class="vertical-divider"></div>
-                    <button>with QR Code</button>
+                    <button class="btn-active"  id="EmailSign" id='email-sign' onclick="changeSign('email')" >Email</button>
+                    <!-- <div class="vertical-divider"></div>
+                    <button>with QR Code</button> -->
                 </div>
 
                 <br>
@@ -43,7 +43,7 @@
 
                 <p class='input-label-text'>Login Password</p>
 
-                <input class='MuiInputBase-input' />
+                <input type="password" class='MuiInputBase-input' />
                 <br>
                 <br>
 
@@ -63,5 +63,7 @@
        
 
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
