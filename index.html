@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="build/css/intlTelInput.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -40,20 +42,34 @@
                
                 <br>
                <form action="#" onsubmit="event.preventDefault()" method="post">
-
      
                 <p class='input-label-text'  id="EmailSignInputL">Email/Sub-Account</p>
-                <input class='MuiInputBase-input' id="EmailSignInputI" />
+                <input class='MuiInputBase-input ' id="EmailSignInputI" />
 
-                <p class='input-label-text disactivate-input '  id="MobileSignInputL">Phone Number</p>
-                <input class='MuiInputBase-input disactivate-input'  id="MobileSignInputI" />
 
-                <p class='input-label-text disactivate-input '  id="MobileSignInputL">Phone Number</p>
-                <input class='MuiInputBase-input disactivate-input'  id="MobileSignInputI" />
+                <div id="MobileSignInputL" class="hide">
 
+                    <input class='MuiInputBase-input incress disactivate-input'   id="MobileSignInputI" />
+                    
+                </div>
+
+                <br>
+     
+                
                 <p class='input-label-text'>Login Password</p>
 
-                <input type="password" class='MuiInputBase-input' />
+                <div class="icon-secure-div">
+                    <input type="password" class='MuiInputBase-input' />
+
+                    <span class="secure-icon">
+                        <button >
+                         <i class="fa fa-envelope icon"></i>
+                        </button>
+ 
+                     </span>
+ 
+                </div>
+
                 <br>
                 <br>
         
@@ -79,9 +95,37 @@
 
     </div>
 
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+    <script src="build/js/intlTelInput.js"></script>
+
 
 
     <script src="script.js"></script>
+     <script>
+    var input = document.querySelector("#MobileSignInputI");
+    window.intlTelInput(input, {
+      // allowDropdown: false,
+    //   autoHideDialCode: false,
+      // autoPlaceholder: "off",
+      dropdownContainer: document.body,
+      // excludeCountries: ["us"],
+      formatOnDisplay: false,
+      // geoIpLookup: function(callback) {
+      //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+      //     var countryCode = (resp && resp.country) ? resp.country : "";
+      //     callback(countryCode);
+      //   });
+      // },
+      // hiddenInput: "full_number",
+      // initialCountry: "auto",
+      // localizedCountries: { 'de': 'Deutschland' },
+      // nationalMode: false,
+      // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+    //   placeholderNumberType: "MOBILE",
+      // preferredCountries: ['cn', 'jp'],
+      separateDialCode: true,
+      utilsScript: "build/js/utils.js",
+    });
+  </script>
 </body>
 </html>

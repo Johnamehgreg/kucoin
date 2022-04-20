@@ -40,6 +40,16 @@ body{
 
 }
 
+.secure-icon{
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%)
+}
+.icon-secure-div{
+    position: relative;
+    display:flex;
+}
+
 .logo-link{
    top: 10px;
    left: 10px;
@@ -390,3 +400,14 @@ shown when checkbox is checked */
     color: white;
     background: #24AE8F;
   }
+
+  .incress{
+    width: 100%;
+    height:45px
+    /* background-color: #00D192; */
+}
+
+.hide{
+    overflow: hidden;
+    position: relative;
+}
