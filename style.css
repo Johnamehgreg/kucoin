@@ -40,14 +40,24 @@ body{
 
 }
 
+
 .secure-icon{
     position: absolute;
     top: 50%;
-    transform:translateY(-50%)
+    transform:translateY(-50%);
+    right: 10px;
+    z-index: 3;
 }
+.passs-btn{
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+
+
 .icon-secure-div{
     position: relative;
-    display:flex;
 }
 
 .logo-link{
@@ -410,4 +420,13 @@ shown when checkbox is checked */
 .hide{
     overflow: hidden;
     position: relative;
+}
+
+#pass-see{
+    display:none
+}
+
+.secure-input{
+    /* padding-right: 10px; */
+    
 }

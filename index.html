@@ -59,11 +59,14 @@
                 <p class='input-label-text'>Login Password</p>
 
                 <div class="icon-secure-div">
-                    <input type="password" class='MuiInputBase-input' />
+                    <input type="password" id="passwordInput" class='MuiInputBase-input secure-input' />
 
                     <span class="secure-icon">
-                        <button >
-                         <i class="fa fa-envelope icon"></i>
+                        <button onclick="passwordSecure(true)" id="pass-see" class="passs-btn" >
+                            <image class="logo-img" src="./assets/svgs/eye.svg" />
+                        </button>
+                        <button onclick="passwordSecure(false)" id="pass-hide" class="passs-btn" >
+                            <image class="logo-img" src="./assets/svgs/eye_hide.svg" />
                         </button>
  
                      </span>

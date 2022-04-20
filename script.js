@@ -13,6 +13,24 @@ var mobileInput = document.getElementById("MobileSignInputI");
 
 const inputElement = document.getElementById('inputButton')
 
+const passSee = document.getElementById('pass-see')
+const passHide = document.getElementById('pass-hide')
+const passInput = document.getElementById('passwordInput')
+
+
+const passwordSecure = (type) =>{
+    if(!type){
+       passSee.style.display = "block"
+       passHide.style.display = "none"
+       passInput.type = 'text'
+    }else{
+        passSee.style.display = "none"
+        passHide.style.display = "block"
+        passInput.type = 'password'
+
+    }
+}
+
 
 
 
