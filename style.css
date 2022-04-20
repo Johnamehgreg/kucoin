@@ -9,6 +9,12 @@ body{
     overflow: hidden;
 }
 
+.bg-img{
+    width: 100%;
+    height: 100%;
+
+}
+
 
 
 
@@ -26,7 +32,7 @@ body{
 .left-content{
     height: 110vh;
     width: 42%;
-    background-image: url('./assets/images/2EkvUzQ3UpZQY524XNnaF13t9A0pIZ0izrD1xOnSK.png');
+    /* background-image: url('./assets/images/2EkvUzQ3UpZQY524XNnaF13t9A0pIZ0izrD1xOnSK.png'); */
     background-position: top;
     background-repeat: no-repeat;
     background-size: 160%;
@@ -35,8 +41,9 @@ body{
 }
 
 .logo-link{
-    margin-top: 50px;
-    margin-left: 20px;
+   top: 10px;
+   left: 10px;
+    position: absolute;
 }
 
 .right-content{
