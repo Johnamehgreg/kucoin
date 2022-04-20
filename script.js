@@ -8,6 +8,9 @@ var emailLabel = document.getElementById("EmailSignInputL");
 var mobileLabel = document.getElementById("MobileSignInputL");
 var mobileInput = document.getElementById("MobileSignInputI");
 
+const inputElement = document.getElementById('inputButton')
+
+
 
 
 
@@ -38,4 +41,10 @@ const changeSign =(type) =>{
         mobileInput.classList.add("disactivate-input")
     }
    
+}
+
+
+
+inputElement.onclick = (e) => {
+	e.preventDefault()
 }

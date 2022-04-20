@@ -38,7 +38,7 @@
                 <br>
                
                 <br>
-               <form action="#" method="post">
+               <form action="#" onsubmit="event.preventDefault()" method="post">
 
      
                 <p class='input-label-text'  id="EmailSignInputL">Email/Sub-Account</p>
@@ -56,14 +56,14 @@
                 <br>
                 <br>
         
-                <button type="submit"  class="pri-btn"><span>Login</span></button>
+                <button type="submit" id="inputButton"  class="pri-btn"><div class="loader"></div><span>Login</span></button>
 
             </form>
 
                 <br>
 
                 <div class="f-pass-div">
-                    <div class="loader"></div>
+                    
                     <button class="f-pass-btn input-label-text">Forget password</button>
                 </div>
 

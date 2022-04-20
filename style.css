@@ -14,7 +14,7 @@ body{
 
 .container-login{
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     display: flex;
     /* overflow:scroll */
    
@@ -24,7 +24,7 @@ body{
 }
 
 .left-content{
-    height: 100vh;
+    height: 110vh;
     width: 42%;
     background-image: url('./assets/images/2EkvUzQ3UpZQY524XNnaF13t9A0pIZ0izrD1xOnSK.png');
     background-position: top;
@@ -109,7 +109,7 @@ body{
 .MuiInputBase-input {
     width: 95%;
     border: 0;
-    height: 2.2rem;
+    height:35px;
     margin-bottom: 20px;
     background-color: #F5F5F6;
     display: block;
@@ -159,19 +159,20 @@ body{
     text-decoration: none;
 
 }
-
 .loader {
-    border: 16px solid #f3f3f3;
+    border: 2px solid #929499a8;
     border-radius: 50%;
-    border-top: 16px solid red;
-    border-right: 16px solid red;
-    border-bottom: 16px solid red;
-    width: 120px;
-    height: 120px;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 1s linear infinite;
+    border-top: 2px solid #fff;
+    border-right:2px solid #fff;
+    border-left:2px solid #fff;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 500ms linear infinite;
   }
   
+  /* Safari */
   @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }
     100% { -webkit-transform: rotate(360deg); }
@@ -181,7 +182,6 @@ body{
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
-
 .check-lebel{
     font-size:0.9rem
 }
@@ -228,6 +228,34 @@ body{
 .g-text{
     color: #9A9A9A;
     font-size: 0.7rem;
+}
+.input-code-div{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    display:grid;
+    grid-template-columns: 0.9fr 0.3fr;
+    
+
+
+
+}
+.code-btn {
+    background-color: #24AE8F;
+    height: 100%;
+    border-radius: 5px;
+    margin:0;
+    border: none;
+    color:white;
+    font-size:.8rem;
+    cursor: pointer;
+
+}
+
+.code-input{
+    width: 80%;
+    margin-bottom: 0px;
+
 }
 
 @media only screen and (max-width: 1200px){
@@ -290,8 +318,8 @@ based on demand */
     position: absolute;
     top: 0;
     left: 0;
-    height: 20px;
-    width: 20px;
+    height: 18px;
+    width: 18px;
     background-color: #fff;
     border:1px solid black;
     border-radius: 3px;
