@@ -430,3 +430,53 @@ shown when checkbox is checked */
     /* padding-right: 10px; */
     
 }
+
+.alert-dialog{
+    /* width:35%; */
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    border:1px solid #f56b7bc3;
+    height:40px;
+    background-color: #FFE7EA;
+    position:absolute;
+    top: 20px;
+    left: 50%;
+    transform:translateX(-50%);
+    z-index: 30;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    box-shadow: -6px 8px 83px -3px rgba(0, 0, 0, 0.265);
+-webkit-box-shadow: -6px 8px 83px -3px rgba(0, 0, 0, 0.352);
+-moz-box-shadow: -6px 8px 83px -3px rgba(0, 0, 0, 0.354);
+
+}
+
+.alert-dialog-text{
+    font-size:0.7rem;
+    font-weight: 600;
+    color:rgba(0, 0, 0, 0.584);
+    margin-left: 10px;
+}
+.cancel-btn{
+    width:25px;
+    height:25px;
+    border:1px solid #f56b7bc3;
+    border-radius: 100%;
+    background-color: transparent;
+    position: relative;
+    align-items: center;
+    justify-content:center;
+    flex-direction:row
+}
+
+.inner-cross1{
+    
+    width:20px;
+    height:5px;
+    background-color: #00D192;
+}
+
+
+  
