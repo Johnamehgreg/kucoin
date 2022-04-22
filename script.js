@@ -17,6 +17,8 @@ const passSee = document.getElementById('pass-see')
 const passHide = document.getElementById('pass-hide')
 const passInput = document.getElementById('passwordInput')
 
+const alertDialog = document.getElementById('alert-dialog')
+
 
 const passwordSecure = (type) =>{
     if(!type){
@@ -39,6 +41,7 @@ const passwordSecure = (type) =>{
 
 const changeSign =(type) =>{
     // input.innerHTML = '.iti__flag-containe{display: none}'
+    // showDialogAlert()
     if(type == 'mobile'){
         mobileBtn.classList.add("btn-active");
         emailBtn.classList.remove("btn-active");
@@ -73,5 +76,15 @@ inputElement.onclick = (e) => {
 
 
 const showDialogAlert = () => {
-    
+    alertDialog.style.top= '70px'
+
+    setTimeout(()=>{
+        alertDialog.style.top= '-100px'
+
+    }, 3000)
+}
+
+const hideShowAlertDialog = () =>{
+    alertDialog.style.top= '-100px'
+
 }
