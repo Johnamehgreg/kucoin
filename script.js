@@ -69,3 +69,9 @@ const changeSign =(type) =>{
 inputElement.onclick = (e) => {
 	e.preventDefault()
 }
+
+
+
+const showDialogAlert = () => {
+    
+}
