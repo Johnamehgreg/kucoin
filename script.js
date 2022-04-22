@@ -41,7 +41,7 @@ const passwordSecure = (type) =>{
 
 const changeSign =(type) =>{
     // input.innerHTML = '.iti__flag-containe{display: none}'
-    showDialogAlert()
+    // showDialogAlert()
     if(type == 'mobile'){
         mobileBtn.classList.add("btn-active");
         emailBtn.classList.remove("btn-active");
