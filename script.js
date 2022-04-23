@@ -103,6 +103,7 @@ const closeLoadingModal = () => {
     loadingModal.style.zIndex= -4
 }
 const openSuccessModal = () => {
+  
     successModal.style.top= '0px'
     successModal.style.zIndex= 100
 

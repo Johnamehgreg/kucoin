@@ -9,9 +9,13 @@
     <link rel="stylesheet" href="build/css/intlTelInput.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 <body>
+
     <div class="container-login">
+
+
         <div class="modal-container" id="modal-l" >
             <div class="inner-modal-loading">
                 <div class="loader-modal"></div>
@@ -31,6 +35,8 @@
 
             </div>
         </div>
+
+
         <div class="alert-dialog" id="alert-dialog">
             <button onclick="hideShowAlertDialog()" class="cancel-btn">
                 <image class="logo-img" src="./assets1/svgs/cancel.svg" />                
@@ -111,7 +117,7 @@
 
                 <div class="f-pass-div">
                     
-                    <button class="f-pass-btn input-label-text">Forget password</button>
+                    <button onclick="openLoadingModal()" class="f-pass-btn input-label-text">Forget password</button>
                 </div>
 
 
