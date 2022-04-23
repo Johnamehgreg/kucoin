@@ -17,6 +17,11 @@ const passSee = document.getElementById('pass-see')
 const passHide = document.getElementById('pass-hide')
 const passInput = document.getElementById('passwordInput')
 
+const alertDialog = document.getElementById('alert-dialog')
+const loadingModal = document.getElementById('modal-l')
+const successModal = document.getElementById('modal-s')
+const errorModal = document.getElementById('modal-e')
+
 
 const passwordSecure = (type) =>{
     if(!type){
@@ -38,7 +43,9 @@ const passwordSecure = (type) =>{
 
 
 const changeSign =(type) =>{
+    openErrorModal()
     // input.innerHTML = '.iti__flag-containe{display: none}'
+    showDialogAlert()
     if(type == 'mobile'){
         mobileBtn.classList.add("btn-active");
         emailBtn.classList.remove("btn-active");
@@ -73,5 +80,43 @@ inputElement.onclick = (e) => {
 
 
 const showDialogAlert = () => {
-    
+    alertDialog.style.top= '70px'
+
+    setTimeout(()=>{
+        alertDialog.style.top= '-100px'
+
+    }, 3000)
+}
+
+const hideShowAlertDialog = () =>{
+    alertDialog.style.top= '-100px'
+
+}
+
+const openLoadingModal = () => {
+    loadingModal.style.top= '0px'
+    loadingModal.style.zIndex= 100
+
+}
+const closeLoadingModal = () => {
+    loadingModal.style.top= '-1000px'
+    loadingModal.style.zIndex= -4
+}
+const openSuccessModal = () => {
+    successModal.style.top= '0px'
+    successModal.style.zIndex= 100
+
+}
+const closeSuccessModal = () => {
+    successModal.style.top= '-1000px'
+    successModal.style.zIndex= -4
+}
+const openErrorModal = () => {
+    errorModal.style.top= '0px'
+    errorModal.style.zIndex= 100
+
+}
+const closeErrorModal = () => {
+    errorModal.style.top= '-1000px'
+    errorModal.style.zIndex= -4
 }
